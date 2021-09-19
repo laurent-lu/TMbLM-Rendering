@@ -17,9 +17,9 @@ This repository provides three BSDF plugins for the Mitsuba 0.6 renderer (https:
 
 ### Prerequisities
 
-- Visual Studio Community 2017 with "C++ Desktop Development" tools: https://visualstudio.microsoft.com/fr/vs/older-downloads/
+- Visual Studio Community 2017 with "C++ Desktop Development" tools: https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-150
 
-- Python 2.7: https://www.python.org/downloads/. Please make sure to enable the **"Add python.exe to Path"** option during the installation process.
+- Python 2.7.18: https://www.python.org/downloads/. Please make sure to enable the **"Add python.exe to Path"** option during the installation process.
 
 - Git command line client: https://git-scm.com/
 
@@ -33,6 +33,7 @@ In a Git Bash prompt:
 - $ git clone https://github.com/mitsuba-renderer/mitsuba
 - $ cd mitsuba
 - $ git clone https://github.com/mitsuba-renderer/dependencies_win64 dependencies
+- $ cp /c/mitsuba/dependencies/lib/*.dll /c/mitsuba/dependencies/bin/
 
 ### Installing SCons
 
@@ -40,7 +41,7 @@ Mitsuba uses SCons (https://www.scons.org/) as its internal build system.
 
 To install SCons, uncompress the archive **C:/mitsuba/dependencies/scons-2.5.1.zip** and type the following commands in a VS2017 command prompt:
 
-- $ cd C:\mitsuba\dependencies\scons-2.5.1
+- $ cd "C:\mitsuba\dependencies\scons-2.5.1"
 - $ python setup.py install
 
 ### Cloning the code attached to the paper
