@@ -73,6 +73,8 @@ plugins += env.SharedLibrary('tm6', ['tm6.cpp'])
 - Uncompress a scene .zip file from **C:/TMbLM-Rendering/scenes/**
 - Drag and drop the XML scene file to **C:/mitsuba/dist/mitsuba.exe** to start the rendering. The corresponding output PNG image is saved in the scene folder at the end of the process.
 
+**Notes**: Running **C:/mitsuba/dist/mtsgui.exe** results in a crash due to missing platform-specific Qt DLLs. Please see https://github.com/mitsuba-renderer/mitsuba/issues/52 where this issue is discussed and a workaround is proposed if Mitsuba's GUI is wanted.
+
 ## Citation
 
 If you use this code, please consider citing our work accordingly: 
